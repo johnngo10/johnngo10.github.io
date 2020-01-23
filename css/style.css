@@ -8,12 +8,42 @@
 #navbar {
   display: flex;
   justify-content: space-between;
+  padding: 2% 10%;
 }
 #navbar .logo {
   width: 5%;
 }
 #navbar .navs {
+  list-style: none;
   display: flex;
+}
+#navbar .navs a {
+  padding-left: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+#header-home {
+  height: 100vh;
+  background: url("/fewd-techdegree-project-9/img/rsz_artem-sapegin-zmraooybtlq-unsplash.jpg") no-repeat top center;
+  background-size: cover;
+}
+#header-home .header-content {
+  text-align: center;
+  margin-top: 10%;
+}
+#header-home .header-content h1 {
+  font-size: 4rem;
+  padding-bottom: 10px;
+}
+#header-home .header-content p {
+  padding-bottom: 30px;
+}
+#header-home .header-content button {
+  border: none;
+  border: 1px solid gray;
+  padding: 15px 20px;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

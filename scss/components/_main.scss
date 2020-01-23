@@ -8,10 +8,41 @@
 #navbar {
   display: flex;
   justify-content: space-between;
+  padding: 2% 10%;
   & .logo {
     width: 5%;
   }
   & .navs {
+    list-style: none;
     display: flex;
+    & a {
+      padding-left: 20px;
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+#header-home {
+  height: 100vh;
+  background: url("/fewd-techdegree-project-9/img/rsz_artem-sapegin-zmraooybtlq-unsplash.jpg")
+    no-repeat top center;
+  background-size: cover;
+  & .header-content {
+    text-align: center;
+    margin-top: 10%;
+    & h1 {
+      font-size: 4rem;
+      padding-bottom: 10px;
+    }
+    & p {
+      padding-bottom: 30px;
+    }
+    & button {
+      border: none;
+      border: 1px solid gray;
+      padding: 15px 20px;
+      font-size: 16px;
+    }
   }
 }
