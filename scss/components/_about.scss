@@ -1,0 +1,19 @@
+#about {
+  text-align: center;
+  margin: 3% 0;
+  color: #333333;
+  & h3 {
+    padding: 20px 0;
+    font-size: 2rem;
+  }
+  & .profile-pic {
+    width: 60%;
+    padding: 30px 0;
+    border-radius: 50%;
+  }
+  & .bio {
+    background-color: rgb(236, 236, 236);
+    margin: 0 5%;
+    padding: 10px;
+  }
+}

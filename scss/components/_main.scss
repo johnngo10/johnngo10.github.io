@@ -15,22 +15,26 @@
   & .navs {
     list-style: none;
     display: flex;
+    & li {
+      padding-left: 40px;
+      margin: auto 0;
+    }
     & a {
-      padding-left: 20px;
       text-decoration: none;
-      color: black;
+      color: #f4f4f4;
     }
   }
 }
 
 #header-home {
-  height: 100vh;
-  background: url("/fewd-techdegree-project-9/img/rsz_artem-sapegin-zmraooybtlq-unsplash.jpg")
-    no-repeat top center;
+  // height: 100vh;
+  background: url("/fewd-techdegree-project-9/img/rsz_nathan-anderson-iyo-egosrco-unsplash.jpg")
+    no-repeat center;
   background-size: cover;
   & .header-content {
     text-align: center;
     margin-top: 10%;
+    color: #f4f4f4;
     & h1 {
       font-size: 4rem;
       padding-bottom: 10px;
@@ -43,6 +47,12 @@
       border: 1px solid gray;
       padding: 15px 20px;
       font-size: 16px;
+      &:hover {
+        cursor: pointer;
+      }
     }
+  }
+  @include mq("lg") {
+    height: 100vh;
   }
 }
