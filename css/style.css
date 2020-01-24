@@ -7,54 +7,92 @@
 
 #navbar {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   padding: 2% 10%;
 }
 #navbar .logo {
-  width: 5%;
+  width: 40%;
+  margin: auto;
 }
 #navbar .navs {
   list-style: none;
   display: flex;
 }
 #navbar .navs li {
-  padding-left: 40px;
-  margin: auto 0;
+  margin: auto;
 }
 #navbar .navs a {
   text-decoration: none;
   color: #f4f4f4;
 }
+@media (min-width: 1024px) {
+  #navbar {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  #navbar .logo {
+    width: 5%;
+    margin: auto 0;
+  }
+  #navbar .navs li {
+    padding-left: 40px;
+    margin: auto 0;
+  }
+}
 
 #header-home {
   background: url("/fewd-techdegree-project-9/img/rsz_nathan-anderson-iyo-egosrco-unsplash.jpg") no-repeat center;
   background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 #header-home .header-content {
-  text-align: center;
-  margin-top: 10%;
-  color: #f4f4f4;
-}
-#header-home .header-content h1 {
-  font-size: 4rem;
-  padding-bottom: 10px;
-}
-#header-home .header-content p {
-  padding-bottom: 30px;
-}
-#header-home .header-content button {
-  border: none;
-  border: 1px solid gray;
-  padding: 15px 20px;
-  font-size: 16px;
-}
-#header-home .header-content button:hover {
-  cursor: pointer;
+  display: none;
 }
 @media (min-width: 1024px) {
   #header-home {
     height: 100vh;
   }
+  #header-home .header-content {
+    display: block;
+    text-align: center;
+    margin-top: 10%;
+    color: #f4f4f4;
+  }
+  #header-home .header-content h1 {
+    font-size: 4rem;
+    padding-bottom: 10px;
+  }
+  #header-home .header-content p {
+    padding-bottom: 30px;
+  }
+  #header-home .header-content button {
+    border: none;
+    border: 1px solid gray;
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+  #header-home .header-content button:hover {
+    cursor: pointer;
+  }
+}
+
+#footer {
+  background-color: #333333;
+  color: #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  padding: 20px;
+}
+#footer p {
+  margin: auto 0;
+}
+#footer .social-container {
+  display: flex;
+  margin: auto 0;
+}
+#footer .social-container div {
+  padding-left: 20px;
 }
 
 #about {
@@ -66,19 +104,38 @@
   padding: 20px 0;
   font-size: 2rem;
 }
-#about .profile-pic {
+#about .bio-pic {
   width: 60%;
   padding: 30px 0;
-  border-radius: 50%;
 }
-#about .bio {
+#about .bio-text {
   background-color: #ececec;
-  margin: 0 5%;
+  margin: 0 auto;
   padding: 10px;
+  width: 40%;
 }
-
+@media (min-width: 768px) {
+  #about .bio {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #about .bio-pic {
+    width: 30%;
+  }
+  #about .bio-text {
+    margin: auto 0;
+  }
+  #about .bio-text p {
+    margin: auto 0;
+  }
+}
 #work {
   text-align: center;
+  color: #333333;
+}
+#work h3 {
+  padding: 20px 0;
+  font-size: 2rem;
 }
 #work .projects {
   margin: 3% 0;
@@ -94,6 +151,24 @@
 }
 #work img:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 768px) {
+  #work .project-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #work .projects {
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  #work .project-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #work .project-container .projects {
+    width: 33.3%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

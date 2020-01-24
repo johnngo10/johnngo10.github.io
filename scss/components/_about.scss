@@ -6,14 +6,34 @@
     padding: 20px 0;
     font-size: 2rem;
   }
-  & .profile-pic {
-    width: 60%;
-    padding: 30px 0;
-    border-radius: 50%;
-  }
   & .bio {
-    background-color: rgb(236, 236, 236);
-    margin: 0 5%;
-    padding: 10px;
+    &-pic {
+      width: 60%;
+      padding: 30px 0;
+      // border-radius: 50%;
+    }
+    &-text {
+      background-color: rgb(236, 236, 236);
+      margin: 0 auto;
+      padding: 10px;
+      width: 40%;
+    }
+  }
+  @include mq("med") {
+    & .bio {
+      display: flex;
+      justify-content: space-evenly;
+      &-pic {
+        width: 30%;
+      }
+      &-text {
+        margin: auto 0;
+        & p {
+          margin: auto 0;
+        }
+      }
+    }
+  }
+  @include mq("lg") {
   }
 }

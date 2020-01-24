@@ -7,52 +7,89 @@
 
 #navbar {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   padding: 2% 10%;
   & .logo {
-    width: 5%;
+    width: 40%;
+    margin: auto;
   }
   & .navs {
     list-style: none;
     display: flex;
     & li {
-      padding-left: 40px;
-      margin: auto 0;
+      margin: auto;
     }
     & a {
       text-decoration: none;
       color: #f4f4f4;
     }
   }
-}
-
-#header-home {
-  // height: 100vh;
-  background: url("/fewd-techdegree-project-9/img/rsz_nathan-anderson-iyo-egosrco-unsplash.jpg")
-    no-repeat center;
-  background-size: cover;
-  & .header-content {
-    text-align: center;
-    margin-top: 10%;
-    color: #f4f4f4;
-    & h1 {
-      font-size: 4rem;
-      padding-bottom: 10px;
+  @include mq("lg") {
+    justify-content: space-between;
+    flex-direction: row;
+    & .logo {
+      width: 5%;
+      margin: auto 0;
     }
-    & p {
-      padding-bottom: 30px;
-    }
-    & button {
-      border: none;
-      border: 1px solid gray;
-      padding: 15px 20px;
-      font-size: 16px;
-      &:hover {
-        cursor: pointer;
+    & .navs {
+      & li {
+        padding-left: 40px;
+        margin: auto 0;
       }
     }
   }
+}
+
+#header-home {
+  background: url("/fewd-techdegree-project-9/img/rsz_nathan-anderson-iyo-egosrco-unsplash.jpg")
+    no-repeat center;
+  background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  & .header-content {
+    display: none;
+  }
   @include mq("lg") {
     height: 100vh;
+    & .header-content {
+      display: block;
+      text-align: center;
+      margin-top: 10%;
+      color: #f4f4f4;
+      & h1 {
+        font-size: 4rem;
+        padding-bottom: 10px;
+      }
+      & p {
+        padding-bottom: 30px;
+      }
+      & button {
+        border: none;
+        border: 1px solid gray;
+        padding: 15px 20px;
+        font-size: 16px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+#footer {
+  background-color: #333333;
+  color: #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  padding: 20px;
+  & p {
+    margin: auto 0;
+  }
+  & .social-container {
+    display: flex;
+    margin: auto 0;
+    & div {
+      padding-left: 20px;
+    }
   }
 }

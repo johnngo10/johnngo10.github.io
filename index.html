@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Xuan Ngo's Web Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/ff7e7905e6.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header id="header-home">
@@ -14,18 +18,20 @@
           <img src="img/xnlogowhite.png" alt="Xuan Ngo's logo" class="logo" />
           <ul class="navs">
             <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">WORK</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#work">WORK</a></li>
             <li><a href="#">CONTACT</a></li>
           </ul>
         </nav>
         <div class="header-content">
-          <h1>I Am Xuan</h1>
+          <h1>I'm Xuan</h1>
           <p>
             I specialize in front-end web development, digital marketing &
             ecommerce
           </p>
-          <button>View My Work</button>
+          <button onClick="location.href='#work'" type="button">
+            View My Work
+          </button>
         </div>
       </div>
     </header>
@@ -33,9 +39,9 @@
     <section id="about">
       <h3>ABOUT ME</h3>
       <p>Let me tell you about myself...</p>
-      <div>
-        <img src="img/rsz_img_6150.jpg" alt="" class="profile-pic" />
-        <div class="bio">
+      <div class="bio">
+        <img src="img/rsz_img_6150.jpg" alt="" class="bio-pic" />
+        <div class="bio-text">
           <p>
             I have a passion for web developement and programming with a
             background in digital marketing and ecommerce.
@@ -45,7 +51,7 @@
     </section>
 
     <section id="work">
-      <h3>My WORK</h3>
+      <h3>MY WORK</h3>
       <p>These are some of my projects</p>
       <div class="project-container">
         <div class="projects">
@@ -60,12 +66,12 @@
             alt=""
           />
         </div>
-        <div class="projects">
+        <!-- <div class="projects">
           <img
             src="img/project-screenshots/rsz_screen_shot_2020-01-23_at_33609_pm.png"
             alt=""
           />
-        </div>
+        </div> -->
         <div class="projects">
           <img
             src="img/project-screenshots/rsz_screen_shot_2020-01-23_at_33642_pm.png"
@@ -95,13 +101,14 @@
 
     <section id="contact"></section>
 
-    <footer>
-      <p>Copyright &copy; 2020. All Rights Reserved</p>
+    <footer id="footer">
+      <p>&copy; 2020 Xuan Ngo</p>
       <div class="social-container">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div><i class="fab fa-linkedin fa-2x"></i></div>
+        <div><i class="fab fa-github-square fa-2x"></i></div>
+        <div><i class="fab fa-facebook-square fa-2x"></i></div>
+        <div><i class="fab fa-twitter-square fa-2x"></i></div>
+        <div><i class="far fa-envelope fa-2x"></i></div>
       </div>
     </footer>
 
