@@ -18,19 +18,42 @@
     }
   }
   & .info {
-    margin: 5% 10%;
+    margin: 5% 0 0 0;
+    background-color: #333333;
     & .info-cards {
-      padding: 40px 0;
-      border-bottom: 0.5px solid lightgray;
+      padding: 40px 20px;
+      color: #f4f4f4;
       & i {
-        background-color: #333333;
-        color: #f4f4f4;
+        background-color: orange;
+        color: #333333;
         padding: 30px;
         border-radius: 50%;
       }
       & h4 {
         padding: 20px 0 10px 0;
       }
+    }
+  }
+  & .skills {
+    background-color: lightgray;
+    padding: 20px;
+    & .html {
+      color: orangered;
+    }
+    & .css {
+      color: steelblue;
+    }
+    & .js {
+      color: goldenrod;
+    }
+    & .sass {
+      color: hotpink;
+    }
+    & .bootstrap {
+      color: darkorchid;
+    }
+    & .wordpress {
+      color: steelblue;
     }
   }
   @include mq("med") {
@@ -51,15 +74,24 @@
     & .info {
       display: flex;
       & .info-cards {
-        border: none;
-        margin: auto;
-        padding: 20px;
+        justify-content: space-around;
+        & p {
+          padding: 0 30px;
+        }
       }
     }
   }
   @include mq("lg") {
     & .bio {
       margin: 5% 20%;
+    }
+    & .info {
+      & .info-cards {
+        width: 33.3%;
+        & p {
+          padding: 0 90px;
+        }
+      }
     }
   }
 }

@@ -67,8 +67,11 @@
         border: 1px solid gray;
         padding: 15px 20px;
         font-size: 16px;
+        transition: 0.5s;
         &:hover {
           cursor: pointer;
+          background-color: orange;
+          color: #f4f4f4;
         }
       }
     }
@@ -90,6 +93,14 @@
     margin: auto 0;
     & div {
       padding-left: 20px;
+    }
+  }
+  @include mq("med") {
+    & p {
+      margin: auto 5%;
+    }
+    & .social-container {
+      margin: auto 6%;
     }
   }
 }

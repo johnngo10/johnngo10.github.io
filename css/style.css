@@ -70,9 +70,12 @@
     border: 1px solid gray;
     padding: 15px 20px;
     font-size: 16px;
+    transition: 0.5s;
   }
   #header-home .header-content button:hover {
     cursor: pointer;
+    background-color: orange;
+    color: #f4f4f4;
   }
 }
 
@@ -93,6 +96,14 @@
 }
 #footer .social-container div {
   padding-left: 20px;
+}
+@media (min-width: 768px) {
+  #footer p {
+    margin: auto 5%;
+  }
+  #footer .social-container {
+    margin: auto 6%;
+  }
 }
 
 #about {
@@ -116,20 +127,43 @@
   padding: 20px;
 }
 #about .info {
-  margin: 5% 10%;
+  margin: 5% 0 0 0;
+  background-color: #333333;
 }
 #about .info .info-cards {
-  padding: 40px 0;
-  border-bottom: 0.5px solid lightgray;
+  padding: 40px 20px;
+  color: #f4f4f4;
 }
 #about .info .info-cards i {
-  background-color: #333333;
-  color: #f4f4f4;
+  background-color: orange;
+  color: #333333;
   padding: 30px;
   border-radius: 50%;
 }
 #about .info .info-cards h4 {
   padding: 20px 0 10px 0;
+}
+#about .skills {
+  background-color: lightgray;
+  padding: 20px;
+}
+#about .skills .html {
+  color: orangered;
+}
+#about .skills .css {
+  color: steelblue;
+}
+#about .skills .js {
+  color: goldenrod;
+}
+#about .skills .sass {
+  color: hotpink;
+}
+#about .skills .bootstrap {
+  color: darkorchid;
+}
+#about .skills .wordpress {
+  color: steelblue;
 }
 @media (min-width: 768px) {
   #about .bio {
@@ -150,14 +184,21 @@
     display: flex;
   }
   #about .info .info-cards {
-    border: none;
-    margin: auto;
-    padding: 20px;
+    justify-content: space-around;
+  }
+  #about .info .info-cards p {
+    padding: 0 30px;
   }
 }
 @media (min-width: 1024px) {
   #about .bio {
     margin: 5% 20%;
+  }
+  #about .info .info-cards {
+    width: 33.3%;
+  }
+  #about .info .info-cards p {
+    padding: 0 90px;
   }
 }
 
