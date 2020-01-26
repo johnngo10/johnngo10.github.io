@@ -219,10 +219,11 @@
     margin: 5% 20%;
   }
   #about .info .info-cards {
+    padding: 60px 20px;
     width: 33.3%;
   }
   #about .info .info-cards p {
-    padding: 0 90px;
+    padding: 0 60px;
   }
 }
 
