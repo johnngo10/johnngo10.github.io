@@ -1,0 +1,25 @@
+#contact {
+  background-color: orange;
+  color: #f4f4f4;
+  text-align: center;
+  & h3 {
+    font-size: 3rem;
+    padding: 30px 0 30px 0;
+  }
+  & .contact-info {
+    display: flex;
+    justify-content: space-evenly;
+    & i {
+      color: #333333;
+    }
+    & p {
+      padding: 10px 0 40px 0;
+      color: #333333;
+    }
+  }
+  @include mq("lg") {
+    & .contact-info {
+      margin: 0 30%;
+    }
+  }
+}

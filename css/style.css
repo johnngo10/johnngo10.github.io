@@ -9,8 +9,13 @@
   margin: auto;
   height: 2px;
   border-radius: 5px;
-  width: 3%;
+  width: 8%;
   background-color: orange;
+}
+@media (min-width: 768px) {
+  .bottom-bar {
+    width: 3%;
+  }
 }
 
 #navbar {
@@ -205,9 +210,6 @@
   #about .info {
     display: flex;
   }
-  #about .info .info-cards {
-    justify-content: space-around;
-  }
   #about .info .info-cards p {
     padding: 0 30px;
   }
@@ -266,6 +268,32 @@
   }
   #work .project-container .projects {
     width: 27%;
+  }
+}
+
+#contact {
+  background-color: orange;
+  color: #f4f4f4;
+  text-align: center;
+}
+#contact h3 {
+  font-size: 3rem;
+  padding: 30px 0 30px 0;
+}
+#contact .contact-info {
+  display: flex;
+  justify-content: space-evenly;
+}
+#contact .contact-info i {
+  color: #333333;
+}
+#contact .contact-info p {
+  padding: 10px 0 40px 0;
+  color: #333333;
+}
+@media (min-width: 1024px) {
+  #contact .contact-info {
+    margin: 0 30%;
   }
 }
 

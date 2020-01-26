@@ -9,8 +9,11 @@
   margin: auto;
   height: 2px;
   border-radius: 5px;
-  width: 3%;
+  width: 8%;
   background-color: orange;
+  @include mq("med") {
+    width: 3%;
+  }
 }
 
 #navbar {
