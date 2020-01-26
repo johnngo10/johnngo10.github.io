@@ -3,8 +3,11 @@
   margin: 3% 0;
   color: #333333;
   & h3 {
-    padding: 20px 0;
+    padding: 20px 0 10px 0;
     font-size: 2rem;
+  }
+  & .about-text {
+    padding-top: 20px;
   }
   & .bio {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -37,23 +40,26 @@
   & .skills {
     background-color: lightgray;
     padding: 20px;
-    & .html {
-      color: orangered;
-    }
-    & .css {
-      color: steelblue;
-    }
-    & .js {
-      color: goldenrod;
-    }
-    & .sass {
-      color: hotpink;
-    }
-    & .bootstrap {
-      color: darkorchid;
-    }
-    & .wordpress {
-      color: steelblue;
+    & .skills-container {
+      padding: 20px;
+      & .html {
+        color: orangered;
+      }
+      & .css {
+        color: steelblue;
+      }
+      & .js {
+        color: goldenrod;
+      }
+      & .sass {
+        color: hotpink;
+      }
+      & .bootstrap {
+        color: darkorchid;
+      }
+      & .wordpress {
+        color: steelblue;
+      }
     }
   }
   @include mq("med") {

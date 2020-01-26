@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Xuan Ngo's Web Portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
     <script
       src="https://kit.fontawesome.com/ff7e7905e6.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header id="header-home">
@@ -38,7 +38,8 @@
 
     <section id="about">
       <h3>ABOUT ME</h3>
-      <p>Let me tell you about myself...</p>
+      <div class="bottom-bar"></div>
+      <p class="about-text">Let me tell you about myself...</p>
       <div class="bio">
         <img src="img/rsz_img_6150.jpg" alt="" class="bio-pic" />
         <div class="bio-text">
@@ -77,6 +78,7 @@
       </div>
       <div class="skills">
         <h3>Skills</h3>
+        <div class="bottom-bar"></div>
         <div class="skills-container">
           <i class="fab fa-html5 fa-3x html"></i>
           <i class="fab fa-css3-alt fa-3x css"></i>
@@ -167,57 +169,82 @@
 
     <section id="work">
       <h3>MY WORK</h3>
-      <p>These are some of my projects</p>
+      <div class="bottom-bar"></div>
+      <p class="work-text">These are some of my projects</p>
       <div class="project-container">
         <div class="projects">
-          <img
-            src="img/project-screenshots/rsz_screen_shot_2020-01-23_at_33355_pm.png"
-            alt=""
-          />
+          <a
+            href="https://xuanngo10.github.io/fewd-techdegree-project-2/"
+            target="_blank"
+          >
+            <img
+              src="img/project-screenshots/rsz_screen_shot_2020-01-23_at_33355_pm.png"
+              alt=""
+            />
+          </a>
           <div class="project-bio">
             <h4>Portfolio Template</h4>
             <p>I built this using HTML & CSS Flexbox</p>
           </div>
         </div>
         <div class="projects">
-          <img
-            src="img/project-screenshots/rsz_screen_shot_2020-01-23_at_33441_pm.png"
-            alt=""
-          />
-        </div>
-        <!-- <div class="projects">
-          <img
-            src="img/project-screenshots/rsz_screen_shot_2020-01-23_at_33609_pm.png"
-            alt=""
-          />
-        </div> -->
-        <div class="projects">
-          <img
-            src="img/project-screenshots/rsz_screen_shot_2020-01-23_at_33642_pm.png"
-            alt=""
-          />
+          <a
+            href="https://xuanngo10.github.io/fewd-techdegree-project-3/"
+            target="_blank"
+          >
+            <img
+              src="img/project-screenshots/rsz_screen_shot_2020-01-23_at_33441_pm.png"
+              alt=""
+            />
+          </a>
         </div>
         <div class="projects">
-          <img
-            src="img/project-screenshots/rsz_screen_shot_2020-01-23_at_33714_pm.png"
-            alt=""
-          />
+          <a
+            href="https://xuanngo10.github.io/fewd-techdegree-project-5/"
+            target="_blank"
+          >
+            <img
+              src="img/project-screenshots/rsz_screen_shot_2020-01-23_at_33642_pm.png"
+              alt=""
+            />
+          </a>
         </div>
         <div class="projects">
-          <img
-            src="img/project-screenshots/rsz_screen_shot_2020-01-23_at_33754_pm.png"
-            alt=""
-          />
+          <a
+            href="https://xuanngo10.github.io/fewd-techdegree-project-6/"
+            target="_blank"
+          >
+            <img
+              src="img/project-screenshots/rsz_screen_shot_2020-01-23_at_33714_pm.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="projects">
+          <a
+            href="https://xuanngo10.github.io/fewd-techdegree-project-7/"
+            target="_blank"
+          >
+            <img
+              src="img/project-screenshots/rsz_screen_shot_2020-01-23_at_33754_pm.png"
+              alt=""
+            />
+          </a>
           <div class="project-bio">
             <h4>WebApp</h4>
             <p>Built using HTML, CSS, SASS, JavaScript</p>
           </div>
         </div>
         <div class="projects">
-          <img
-            src="img/project-screenshots/rsz_screen_shot_2020-01-23_at_33844_pm.png"
-            alt=""
-          />
+          <a
+            href="https://xuanngo10.github.io/fewd-techdegree-project-8/"
+            target="_blank"
+          >
+            <img
+              src="img/project-screenshots/rsz_screen_shot_2020-01-23_at_33844_pm.png"
+              alt=""
+            />
+          </a>
         </div>
       </div>
     </section>
@@ -227,11 +254,35 @@
     <footer id="footer">
       <p>&copy; 2020 Xuan Ngo</p>
       <div class="social-container">
-        <div><i class="fab fa-linkedin fa-2x"></i></div>
-        <div><i class="fab fa-github-square fa-2x"></i></div>
-        <div><i class="fab fa-facebook-square fa-2x"></i></div>
-        <div><i class="fab fa-twitter-square fa-2x"></i></div>
-        <div><i class="far fa-envelope fa-2x"></i></div>
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/xuan-ngo-351a77158/"
+              target="_blank"
+              ><i class="fab fa-linkedin fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/xuanngo10" target="_blank"
+              ><i class="fab fa-github-square fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/xuan.ngo.52" target="_blank"
+              ><i class="fab fa-facebook-square fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/Xuan__Ngo" target="_blank"
+              ><i class="fab fa-twitter-square fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="mailto:xuan.ngo10@gmail.com"
+              ><i class="far fa-envelope fa-2x"></i
+            ></a>
+          </li>
+        </ul>
       </div>
     </footer>
 

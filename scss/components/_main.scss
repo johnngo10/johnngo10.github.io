@@ -5,6 +5,14 @@
   font-family: "Roboto", sans-serif;
 }
 
+.bottom-bar {
+  margin: auto;
+  height: 2px;
+  border-radius: 5px;
+  width: 3%;
+  background-color: orange;
+}
+
 #navbar {
   display: flex;
   flex-direction: column;
@@ -89,10 +97,20 @@
     margin: auto 0;
   }
   & .social-container {
-    display: flex;
-    margin: auto 0;
-    & div {
-      padding-left: 20px;
+    & ul {
+      display: flex;
+      margin: auto 0;
+      list-style: none;
+      & li {
+        padding-left: 20px;
+        & i {
+          color: #f4f4f4;
+          transition: 0.5s;
+          &:hover {
+            color: orange;
+          }
+        }
+      }
     }
   }
   @include mq("med") {

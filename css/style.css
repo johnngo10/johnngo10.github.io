@@ -5,6 +5,14 @@
   font-family: "Roboto", sans-serif;
 }
 
+.bottom-bar {
+  margin: auto;
+  height: 2px;
+  border-radius: 5px;
+  width: 3%;
+  background-color: orange;
+}
+
 #navbar {
   display: flex;
   flex-direction: column;
@@ -90,12 +98,20 @@
 #footer p {
   margin: auto 0;
 }
-#footer .social-container {
+#footer .social-container ul {
   display: flex;
   margin: auto 0;
+  list-style: none;
 }
-#footer .social-container div {
+#footer .social-container ul li {
   padding-left: 20px;
+}
+#footer .social-container ul li i {
+  color: #f4f4f4;
+  transition: 0.5s;
+}
+#footer .social-container ul li i:hover {
+  color: orange;
 }
 @media (min-width: 768px) {
   #footer p {
@@ -112,8 +128,11 @@
   color: #333333;
 }
 #about h3 {
-  padding: 20px 0;
+  padding: 20px 0 10px 0;
   font-size: 2rem;
+}
+#about .about-text {
+  padding-top: 20px;
 }
 #about .bio {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -147,22 +166,25 @@
   background-color: lightgray;
   padding: 20px;
 }
-#about .skills .html {
+#about .skills .skills-container {
+  padding: 20px;
+}
+#about .skills .skills-container .html {
   color: orangered;
 }
-#about .skills .css {
+#about .skills .skills-container .css {
   color: steelblue;
 }
-#about .skills .js {
+#about .skills .skills-container .js {
   color: goldenrod;
 }
-#about .skills .sass {
+#about .skills .skills-container .sass {
   color: hotpink;
 }
-#about .skills .bootstrap {
+#about .skills .skills-container .bootstrap {
   color: darkorchid;
 }
-#about .skills .wordpress {
+#about .skills .skills-container .wordpress {
   color: steelblue;
 }
 @media (min-width: 768px) {
@@ -207,8 +229,11 @@
   color: #333333;
 }
 #work h3 {
-  padding: 20px 0;
+  padding: 20px 0 10px 0;
   font-size: 2rem;
+}
+#work .work-text {
+  padding-top: 20px;
 }
 #work .projects {
   margin: 3%;

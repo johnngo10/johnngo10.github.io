@@ -3,8 +3,11 @@
   color: #333333;
   // margin: 0 5%;
   & h3 {
-    padding: 20px 0;
+    padding: 20px 0 10px 0;
     font-size: 2rem;
+  }
+  & .work-text {
+    padding-top: 20px;
   }
   & .projects {
     margin: 3%;
