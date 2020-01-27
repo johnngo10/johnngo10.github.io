@@ -58,7 +58,7 @@ html {
 }
 
 #header-home {
-  background: url("/fewd-techdegree-project-9/img/rsz_nathan-anderson-iyo-egosrco-unsplash.jpg") no-repeat center;
+  background: url("../img/rsz_nathan-anderson-iyo-egosrco-unsplash.jpg") no-repeat center;
   background-size: cover;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
