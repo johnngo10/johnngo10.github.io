@@ -5,6 +5,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .bottom-bar {
   margin: auto;
   height: 2px;
@@ -52,6 +56,9 @@
 }
 
 #header-home {
+  // background: linear-gradient(rgba(75, 44, 29, 0.753), rgba(0, 0, 0, 0.753)),
+  //   url("/fewd-techdegree-project-9/img/rsz_artem-sapegin-zmraooybtlq-unsplash.jpg")
+  //     no-repeat center;
   background: url("/fewd-techdegree-project-9/img/rsz_nathan-anderson-iyo-egosrco-unsplash.jpg")
     no-repeat center;
   background-size: cover;
