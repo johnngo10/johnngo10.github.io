@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 html {
@@ -198,6 +198,11 @@ html {
 #about .skills .skills-container .wordpress {
   color: steelblue;
 }
+#about .skills .skills-container p {
+  display: none;
+  padding-top: 20px;
+  color: gray;
+}
 @media (min-width: 768px) {
   #about .bio {
     display: flex;
@@ -225,6 +230,14 @@ html {
   #about .skills .skills-container {
     padding-top: 40px;
   }
+  #about .skills .skills-container i,
+#about .skills .skills-container svg {
+    transition: all 0.2s ease-in-out;
+  }
+  #about .skills .skills-container i:hover,
+#about .skills .skills-container svg:hover {
+    transform: scale(1.6);
+  }
 }
 @media (min-width: 1024px) {
   #about .bio {
@@ -236,6 +249,12 @@ html {
   }
   #about .info .info-cards p {
     padding: 0 60px;
+  }
+  #about .skills .skills-container {
+    padding: 40px 240px 20px 240px;
+  }
+  #about .skills .skills-container p {
+    display: block;
   }
 }
 
