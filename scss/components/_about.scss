@@ -42,6 +42,8 @@
     padding: 20px;
     & .skills-container {
       padding: 20px;
+      display: flex;
+      justify-content: space-evenly;
       & .html {
         color: orangered;
       }
@@ -83,6 +85,12 @@
         & p {
           padding: 0 30px;
         }
+      }
+    }
+    & .skills {
+      padding-bottom: 40px;
+      & .skills-container {
+        padding-top: 40px;
       }
     }
   }

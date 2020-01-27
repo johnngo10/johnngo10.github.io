@@ -177,6 +177,8 @@ html {
 }
 #about .skills .skills-container {
   padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
 }
 #about .skills .skills-container .html {
   color: orangered;
@@ -216,6 +218,12 @@ html {
   }
   #about .info .info-cards p {
     padding: 0 30px;
+  }
+  #about .skills {
+    padding-bottom: 40px;
+  }
+  #about .skills .skills-container {
+    padding-top: 40px;
   }
 }
 @media (min-width: 1024px) {
@@ -260,7 +268,7 @@ html {
 #work .projects .project-bio .view-project-icons {
   display: flex;
   justify-content: space-evenly;
-  padding: 10px 190px;
+  padding: 10px 150px;
 }
 #work .projects .project-bio .view-project-icons a {
   text-decoration: none;
@@ -282,6 +290,9 @@ html {
   #work .projects {
     width: 44%;
   }
+  #work .projects .project-bio .view-project-icons {
+    padding: 10px 130px;
+  }
 }
 @media (min-width: 1024px) {
   #work .project-container {
@@ -289,6 +300,9 @@ html {
   }
   #work .project-container .projects {
     width: 27%;
+  }
+  #work .project-container .projects .project-bio .view-project-icons {
+    padding: 10px 130px;
   }
 }
 
