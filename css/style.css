@@ -250,6 +250,22 @@
 #work .projects .project-bio {
   padding: 10px;
 }
+#work .projects .project-bio h4 {
+  padding-bottom: 20px;
+}
+#work .projects .project-bio .view-project-icons {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 190px;
+}
+#work .projects .project-bio .view-project-icons a {
+  text-decoration: none;
+  color: orange;
+  transition: 0.3s;
+}
+#work .projects .project-bio .view-project-icons a:hover {
+  opacity: 70%;
+}
 #work img {
   width: 100%;
   border-radius: 5px;
