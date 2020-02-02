@@ -17,25 +17,6 @@
     &:hover {
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     }
-    & .project-bio {
-      padding: 10px;
-      & h4 {
-        padding-bottom: 20px;
-      }
-      & .view-project-icons {
-        display: flex;
-        justify-content: space-evenly;
-        padding: 10px 150px;
-        & a {
-          text-decoration: none;
-          color: orange;
-          transition: 0.3s;
-          &:hover {
-            opacity: 70%;
-          }
-        }
-      }
-    }
   }
   & img {
     width: 100%;
@@ -48,11 +29,6 @@
     }
     & .projects {
       width: 44%;
-      & .project-bio {
-        & .view-project-icons {
-          padding: 10px 130px;
-        }
-      }
     }
   }
   @include mq("lg") {
@@ -60,11 +36,6 @@
       margin: 3%;
       & .projects {
         width: 27%;
-        & .project-bio {
-          & .view-project-icons {
-            padding: 10px 130px;
-          }
-        }
       }
     }
   }
