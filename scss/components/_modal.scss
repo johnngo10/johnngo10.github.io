@@ -14,7 +14,7 @@
 
 .modal {
   width: 80%;
-  margin: auto auto;
+  margin: 30% auto;
   position: relative;
   text-align: center;
   background: #fff;
@@ -47,39 +47,74 @@
         width: 100%;
       }
       & .modal-bio {
+        & h4 {
+          margin: 5% 0;
+        }
         & .tools-list {
           list-style: none;
           display: flex;
-          justify-content: space-evenly;
+          justify-content: center;
           flex-wrap: wrap;
+          margin-top: 5%;
           & .tools {
             border: 2px solid orange;
             border-radius: 5px;
             padding: 5px;
+            margin: 0 1% 5% 0;
           }
         }
       }
     }
   }
-  @include mq("lg") {
+  & a {
+    text-decoration: none;
+  }
+  &-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    & .buttons {
+      border: 1px solid orange;
+      border-radius: 20px;
+      padding: 10px 20px;
+      color: #f4f4f4;
+      background-color: orange;
+      &:hover {
+        opacity: 70%;
+      }
+    }
+  }
+  @include mq("med") {
     margin: 7% auto;
+  }
+  @include mq("lg") {
+    margin: 10% auto;
     &-content {
       & .container {
-        margin: 2%;
+        margin: 1%;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         & img {
-          width: 50%;
+          width: 60%;
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         }
         & .modal-bio {
-          width: 50%;
+          width: 40%;
           display: flex;
           flex-direction: column;
-          justify-content: space-evenly;
+          text-align: left;
+          margin: 2% 5%;
+          & h4 {
+            font-size: 2rem;
+          }
+          & .tools-list {
+            justify-content: unset;
+          }
         }
       }
+    }
+    &-buttons {
+      justify-content: unset;
     }
   }
 }
