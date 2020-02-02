@@ -1,1 +1,53 @@
+// ---------------------------------------------
+// Variables
+// ---------------------------------------------
+const projectThumbnail = document.querySelectorAll(".project-thumbnail");
+const overlay = document.querySelector(".overlay");
+const closeModal = document.querySelector(".modal-close");
+const modalContent = document.querySelectorAll(".modal-content");
+const project1 = document.querySelector(".project-1");
+const project2 = document.querySelector(".project-2");
+const project3 = document.querySelector(".project-3");
+const project4 = document.querySelector(".project-4");
+const project5 = document.querySelector(".project-5");
+const project6 = document.querySelector(".project-6");
 
+// ---------------------------------------------
+// Functions
+// ---------------------------------------------
+function displayModal() {
+  overlay.classList.remove("hidden");
+}
+
+// ---------------------------------------------
+// EVENT LISTENERS
+// ---------------------------------------------
+for (const img of projectThumbnail) {
+  img.addEventListener("click", e => {
+    overlay.classList.remove("hidden");
+
+    let attr = e.target.getAttribute("alt");
+
+    if (attr === "project 1") {
+      project1.classList.remove("hidden");
+    } else if (attr === "project 2") {
+      project2.classList.remove("hidden");
+    } else if (attr === "project 3") {
+      project3.classList.remove("hidden");
+    } else if (attr === "project 4") {
+      project4.classList.remove("hidden");
+    } else if (attr === "project 5") {
+      project5.classList.remove("hidden");
+    } else if (attr === "project 6") {
+      project6.classList.remove("hidden");
+    }
+  });
+}
+
+closeModal.addEventListener("click", () => {
+  overlay.classList.add("hidden");
+
+  for (const content of modalContent) {
+    content.classList.add("hidden");
+  }
+});
