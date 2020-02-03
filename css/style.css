@@ -270,12 +270,36 @@ html {
   padding-top: 20px;
 }
 #work .projects {
+  position: relative;
   margin: 3%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
-#work .projects:hover {
+#work .projects-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.4s ease;
+  background-color: orange;
+  cursor: pointer;
+}
+#work .projects-overlay h4 {
+  color: #f4f4f4;
+  margin: 20% 0 auto;
+  font-size: 2rem;
+}
+#work .projects-overlay p {
+  color: #f4f4f4;
+  font-size: 1rem;
+}
+#work .projects:hover .projects-overlay {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  opacity: 90%;
 }
 #work img {
   width: 100%;
@@ -374,14 +398,14 @@ html {
   width: 100%;
 }
 .modal-content .container .modal-bio h4 {
-  margin: 5% 0;
+  margin-bottom: 10%;
 }
 .modal-content .container .modal-bio .tools-list {
   list-style: none;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 .modal-content .container .modal-bio .tools-list .tools {
   border: 2px solid orange;
