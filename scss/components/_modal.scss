@@ -114,7 +114,8 @@
       }
     }
     &-buttons {
-      justify-content: unset;
+      justify-content: space-between;
+      max-width: 220px;
     }
   }
 }

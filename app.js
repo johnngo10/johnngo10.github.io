@@ -3,6 +3,7 @@
 // ---------------------------------------------
 const projectThumbnail = document.querySelectorAll(".project-thumbnail");
 const overlay = document.querySelector(".overlay");
+const modal = document.getElementById("myModal");
 const closeModal = document.querySelector(".modal-close");
 const modalContent = document.querySelectorAll(".modal-content");
 const projectOverlay = document.querySelectorAll(".projects-overlay");
@@ -16,9 +17,6 @@ const project6 = document.querySelector(".project-6");
 // ---------------------------------------------
 // Functions
 // ---------------------------------------------
-function displayModal() {
-  overlay.classList.remove("hidden");
-}
 
 // ---------------------------------------------
 // EVENT LISTENERS
@@ -78,3 +76,9 @@ closeModal.addEventListener("click", () => {
     content.classList.add("hidden");
   }
 });
+
+// window.onclick = function(event) {
+//   if (event.target == overlay) {
+//     overlay.style.display = "none";
+//   }
+// };

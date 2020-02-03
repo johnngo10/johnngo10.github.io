@@ -463,7 +463,8 @@ html {
     justify-content: unset;
   }
   .modal-buttons {
-    justify-content: unset;
+    justify-content: space-between;
+    max-width: 220px;
   }
 }
 
