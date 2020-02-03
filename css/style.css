@@ -405,7 +405,7 @@ html {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .modal-content .container .modal-bio .tools-list .tools {
   border: 2px solid orange;
@@ -446,11 +446,11 @@ html {
     justify-content: space-between;
   }
   .modal-content .container img {
-    width: 60%;
+    width: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
   .modal-content .container .modal-bio {
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     text-align: left;
