@@ -159,6 +159,11 @@ html {
   margin: 5% 0 0 0;
   background-color: #333333;
 }
+#about .info h3 {
+  padding: 40px 0 10px 0;
+  color: #f4f4f4;
+  font-size: 2rem;
+}
 #about .info .info-cards {
   padding: 40px 20px;
   color: #f4f4f4;
@@ -166,11 +171,12 @@ html {
 #about .info .info-cards i {
   background-color: orange;
   color: #333333;
-  padding: 30px;
+  padding: 40px;
   border-radius: 50%;
 }
 #about .info .info-cards h4 {
   padding: 20px 0 10px 0;
+  font-size: 23px;
 }
 #about .skills {
   background-color: lightgray;
@@ -178,29 +184,26 @@ html {
 }
 #about .skills .skills-container {
   padding: 20px;
-  display: flex;
-  justify-content: space-evenly;
 }
-#about .skills .skills-container .html {
-  color: orangered;
+#about .skills .skills-container .languages {
+  margin: 2%;
+  padding: 40px;
+  background: #f4f4f4;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-#about .skills .skills-container .css {
-  color: steelblue;
+#about .skills .skills-container .languages h4 {
+  font-size: 20px;
 }
-#about .skills .skills-container .js {
-  color: goldenrod;
+#about .skills .skills-container .tools {
+  margin: 2%;
+  padding: 40px;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-#about .skills .skills-container .sass {
-  color: hotpink;
-}
-#about .skills .skills-container .bootstrap {
-  color: darkorchid;
-}
-#about .skills .skills-container .wordpress {
-  color: steelblue;
+#about .skills .skills-container .tools h4 {
+  font-size: 20px;
 }
 #about .skills .skills-container p {
-  display: none;
   padding-top: 20px;
   color: gray;
 }
@@ -230,6 +233,8 @@ html {
   }
   #about .skills .skills-container {
     padding-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
   }
   #about .skills .skills-container i,
 #about .skills .skills-container svg {
@@ -242,10 +247,14 @@ html {
 }
 @media (min-width: 1024px) {
   #about .bio {
-    margin: 5% 20%;
+    margin: 5% 20% 10% 20%;
+  }
+  #about .info h3 {
+    padding: 5% 0 10px 0;
   }
   #about .info-container {
-    margin: 0 10%;
+    margin: 1% 10% 0 10%;
+    padding-bottom: 3%;
   }
   #about .info .info-cards {
     padding: 60px 20px;
