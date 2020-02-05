@@ -3,7 +3,6 @@
 // ---------------------------------------------
 const projectThumbnail = document.querySelectorAll(".project-thumbnail");
 const overlay = document.querySelector(".overlay");
-const modal = document.getElementById("myModal");
 const closeModal = document.querySelector(".modal-close");
 const modalContent = document.querySelectorAll(".modal-content");
 const projectOverlay = document.querySelectorAll(".projects-overlay");
@@ -13,7 +12,6 @@ const project3 = document.querySelector(".project-3");
 const project4 = document.querySelector(".project-4");
 const project5 = document.querySelector(".project-5");
 const project6 = document.querySelector(".project-6");
-const nav = document.getElementById("navbar");
 
 // ---------------------------------------------
 // MODAL
