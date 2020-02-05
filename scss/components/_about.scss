@@ -85,7 +85,9 @@
       }
     }
     & .info {
-      display: flex;
+      &-container {
+        display: flex;
+      }
       & .info-cards {
         & p {
           padding: 0 30px;
@@ -111,6 +113,9 @@
       margin: 5% 20%;
     }
     & .info {
+      &-container {
+        margin: 0 10%;
+      }
       & .info-cards {
         padding: 60px 20px;
         width: 33.3%;

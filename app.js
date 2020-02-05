@@ -13,6 +13,9 @@ const project3 = document.querySelector(".project-3");
 const project4 = document.querySelector(".project-4");
 const project5 = document.querySelector(".project-5");
 const project6 = document.querySelector(".project-6");
+const skillIcons = document.querySelectorAll(".skill-icons");
+const skillLabel = document.querySelectorAll(".skill-label");
+const label = document.querySelector(".skill-label");
 
 // ---------------------------------------------
 // Functions
@@ -82,3 +85,15 @@ closeModal.addEventListener("click", () => {
 //     overlay.style.display = "none";
 //   }
 // };
+
+// skill icons
+// for (icons of skillIcons) {
+//   icons.addEventListener("mouseover", () => {
+//     for (labels of skillLabel) {
+//       labels.style.opacity = 1;
+//     }
+//   });
+//   icons.addEventListener("mouseout", () => {
+//     label.style.opacity = 0;
+//   });
+// }

@@ -46,6 +46,7 @@ html {
   #navbar {
     justify-content: space-between;
     flex-direction: row;
+    margin: 0 5%;
   }
   #navbar .logo {
     width: 5%;
@@ -124,10 +125,10 @@ html {
 }
 @media (min-width: 768px) {
   #footer p {
-    margin: auto 5%;
+    margin: auto 15%;
   }
   #footer .social-container {
-    margin: auto 6%;
+    margin: auto 15%;
   }
 }
 
@@ -218,7 +219,7 @@ html {
   #about .bio-text p {
     margin: auto 0;
   }
-  #about .info {
+  #about .info-container {
     display: flex;
   }
   #about .info .info-cards p {
@@ -243,6 +244,9 @@ html {
   #about .bio {
     margin: 5% 20%;
   }
+  #about .info-container {
+    margin: 0 10%;
+  }
   #about .info .info-cards {
     padding: 60px 20px;
     width: 33.3%;
@@ -261,6 +265,7 @@ html {
 #work {
   text-align: center;
   color: #333333;
+  margin: 0 10%;
 }
 #work h3 {
   padding: 20px 0 10px 0;
@@ -271,7 +276,7 @@ html {
 }
 #work .projects {
   position: relative;
-  margin: 3%;
+  margin: 2% auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
@@ -368,6 +373,7 @@ html {
   position: relative;
   text-align: center;
   background: #fff;
+  color: #333333;
   border: 1px solid #778;
   border-radius: 5px;
   padding: 30px 20px;

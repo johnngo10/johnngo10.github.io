@@ -42,6 +42,7 @@ html {
   @include mq("lg") {
     justify-content: space-between;
     flex-direction: row;
+    margin: 0 5%;
     & .logo {
       width: 5%;
       margin: auto 0;
@@ -125,10 +126,10 @@ html {
   }
   @include mq("med") {
     & p {
-      margin: auto 5%;
+      margin: auto 15%;
     }
     & .social-container {
-      margin: auto 6%;
+      margin: auto 15%;
     }
   }
 }
