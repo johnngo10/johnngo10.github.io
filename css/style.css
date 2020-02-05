@@ -333,7 +333,7 @@ html {
 }
 @media (min-width: 1024px) {
   #work .project-container {
-    margin: 2% 2% 5% 2%;
+    margin: 5% 1% 8% 1%;
   }
   #work .project-container .projects {
     width: 27%;
