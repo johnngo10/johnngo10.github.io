@@ -16,11 +16,7 @@ const project6 = document.querySelector(".project-6");
 const nav = document.getElementById("navbar");
 
 // ---------------------------------------------
-// Functions
-// ---------------------------------------------
-
-// ---------------------------------------------
-// EVENT LISTENERS
+// MODAL
 // ---------------------------------------------
 
 // Open modal when clicked on img
@@ -84,29 +80,71 @@ closeModal.addEventListener("click", () => {
 //   }
 // };
 
-// Sticky Nav
-// window.onscroll = function() {
-//   stickyNav();
-// };
+// ---------------------------------------------
+// TYPEWRITER
+// ---------------------------------------------
 
-// const sticky = nav.offsetTop;
+const typeWriter = function(txtElement, words, wait = 3000) {
+  this.txtElement = txtElement;
+  this.words = words;
+  this.txt = "";
+  this.wordIndex = 0;
+  this.wait = parseInt(wait, 10);
+  this.type();
+  this.isDeleting = false;
+};
 
-// function stickyNav() {
-//   if (window.pageYOffset > sticky) {
-//     nav.classList.add("sticky");
-//   } else {
-//     nav.classList.remove("sticky");
-//   }
-// }
+// Type Method
+typeWriter.prototype.type = function() {
+  // Current index of word
+  const current = this.wordIndex % this.words.length;
+  // Get full text of current word
+  const fullTxt = this.words[current];
 
-// skill icons
-// for (icons of skillIcons) {
-//   icons.addEventListener("mouseover", () => {
-//     for (labels of skillLabel) {
-//       labels.style.opacity = 1;
-//     }
-//   });
-//   icons.addEventListener("mouseout", () => {
-//     label.style.opacity = 0;
-//   });
-// }
+  // Check if deleting
+  if (this.isDeleting) {
+    // Remove char
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    // Add char
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  // Insert txt into element
+  this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+
+  // Initial Type Speed
+  let typeSpeed = 100;
+
+  if (this.isDeleting) {
+    typeSpeed /= 2;
+  }
+
+  // If word is complete
+  if (!this.isDeleting && this.txt === fullTxt) {
+    // Make pause at end
+    typeSpeed = this.wait;
+    // Set delete to true
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === "") {
+    this.isDeleting = false;
+    // Move to next word
+    this.wordIndex++;
+    // Pause before start typing
+    typeSpeed = 500;
+  }
+
+  setTimeout(() => this.type(), typeSpeed);
+};
+
+// Init On DOM Load
+document.addEventListener("DOMContentLoaded", init);
+
+// Init App
+function init() {
+  const txtElement = document.querySelector(".txt-type");
+  const words = JSON.parse(txtElement.getAttribute("data-words"));
+  const wait = txtElement.getAttribute("data-wait");
+  // Init typeWriter
+  new typeWriter(txtElement, words, wait);
+}

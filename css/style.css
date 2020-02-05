@@ -82,6 +82,7 @@ html {
   }
   #header-home .header-content p {
     padding-bottom: 30px;
+    font-size: 1.5rem;
   }
   #header-home .header-content button {
     border: none;
@@ -95,6 +96,10 @@ html {
     background-color: orange;
     color: #f4f4f4;
   }
+}
+
+.txt-type > .txt {
+  border-right: 0.2rem solid orange;
 }
 
 #footer {
@@ -185,23 +190,21 @@ html {
 #about .skills .skills-container {
   padding: 20px;
 }
-#about .skills .skills-container .languages {
+#about .skills .skills-container .languages,
+#about .skills .skills-container .tools {
   margin: 2%;
   padding: 40px;
   background: #f4f4f4;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
 }
-#about .skills .skills-container .languages h4 {
-  font-size: 20px;
-}
-#about .skills .skills-container .tools {
-  margin: 2%;
-  padding: 40px;
-  background-color: #f4f4f4;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
+#about .skills .skills-container .languages h4,
 #about .skills .skills-container .tools h4 {
   font-size: 20px;
+}
+#about .skills .skills-container .languages:hover,
+#about .skills .skills-container .tools:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 #about .skills .skills-container p {
   padding-top: 20px;
@@ -250,7 +253,7 @@ html {
     margin: 5% 20% 10% 20%;
   }
   #about .info h3 {
-    padding: 5% 0 10px 0;
+    padding: 3% 0 10px 0;
   }
   #about .info-container {
     margin: 1% 10% 0 10%;
@@ -330,7 +333,7 @@ html {
 }
 @media (min-width: 1024px) {
   #work .project-container {
-    margin: 3%;
+    margin: 2% 2% 5% 2%;
   }
   #work .project-container .projects {
     width: 27%;
