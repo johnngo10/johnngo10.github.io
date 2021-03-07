@@ -48,30 +48,15 @@
     padding: 20px;
     & .skills-container {
       padding: 20px;
-      // display: flex;
-      // justify-content: space-evenly;
-      // & .html {
-      //   color: orangered;
-      // }
-      // & .css {
-      //   color: steelblue;
-      // }
-      // & .js {
-      //   color: goldenrod;
-      // }
-      // & .sass {
-      //   color: hotpink;
-      // }
-      // & .bootstrap {
-      //   color: darkorchid;
-      // }
-      // & .wordpress {
-      //   color: steelblue;
-      // }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       & .languages,
       .tools {
         margin: 2%;
         padding: 40px;
+        width: 300px;
         background: #f4f4f4;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         transition: 0.3s;
@@ -88,7 +73,7 @@
       }
     }
   }
-  @include mq("med") {
+  @include mq('med') {
     & .bio {
       display: flex;
       justify-content: space-evenly;
@@ -118,6 +103,8 @@
       & .skills-container {
         padding-top: 40px;
         display: flex;
+        flex-direction: row;
+        align-items: unset;
         justify-content: space-evenly;
         & i,
         svg {
@@ -129,7 +116,7 @@
       }
     }
   }
-  @include mq("lg") {
+  @include mq('lg') {
     & .bio {
       margin: 5% 20% 10% 20%;
     }

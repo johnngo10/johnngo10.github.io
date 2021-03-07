@@ -40,6 +40,8 @@
     border: none;
     font-size: 30px;
     color: grey;
+    background-color: white;
+    outline: none;
   }
   &-content {
     & .container {
@@ -84,10 +86,10 @@
       }
     }
   }
-  @include mq("med") {
+  @include mq('med') {
     margin: 7% auto;
   }
-  @include mq("lg") {
+  @include mq('lg') {
     margin: 10% auto;
     &-content {
       & .container {
