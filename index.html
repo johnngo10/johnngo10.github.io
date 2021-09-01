@@ -96,7 +96,7 @@
           <div class="languages">
             <h4><i class="fas fa-cog"></i> Technologies</h4>
             <p>JavaScript (ES6+)</p>
-            <p>React</p>
+            <p>React + Redux</p>
             <p>HTML</p>
             <p>CSS</p>
             <p>Sass</p>
@@ -128,13 +128,26 @@
       <div class="project-container">
         <div class="projects">
           <img
-            src="img/project-screenshots/personal-library.png"
+            src="img/project-screenshots/blogbyte.png"
             alt="project 1"
             class="project-thumbnail"
           />
           <div class="projects-overlay" data-for="project-1">
-            <h4 data-for="project-1">MERN Stack App</h4>
+            <h4 data-for="project-1">BlogByte MERN App</h4>
             <p data-for="project-1">
+              React + Redux / Node.js / Express / MongoDB
+            </p>
+          </div>
+        </div>
+        <div class="projects">
+          <img
+            src="img/project-screenshots/personal-library.png"
+            alt="project 2"
+            class="project-thumbnail"
+          />
+          <div class="projects-overlay" data-for="project-2">
+            <h4 data-for="project-2">Library MERN App</h4>
+            <p data-for="project-2">
               MongoDB / Express / React / Node.js / HTML / CSS
             </p>
           </div>
@@ -142,56 +155,45 @@
         <div class="projects">
           <img
             src="img/project-screenshots/todo_app.png"
-            alt="project 2"
+            alt="project 3"
             class="project-thumbnail"
           />
-          <div class="projects-overlay" data-for="project-2">
-            <h4 data-for="project-2">Todo App</h4>
-            <p data-for="project-2">HTML / CSS / JavaScript / Webpack</p>
+          <div class="projects-overlay" data-for="project-3">
+            <h4 data-for="project-3">Todo App</h4>
+            <p data-for="project-3">HTML / CSS / JavaScript / Webpack</p>
           </div>
         </div>
         <div class="projects">
           <img
             src="img/project-screenshots/shopping_cart.png"
-            alt="project 3"
-            class="project-thumbnail"
-          />
-          <div class="projects-overlay" data-for="project-3">
-            <h4 data-for="project-3">Shopping Cart</h4>
-            <p data-for="project-3">React</p>
-          </div>
-        </div>
-        <div class="projects">
-          <img
-            src="img/project-screenshots/Rick_Morty_Game.png"
             alt="project 4"
             class="project-thumbnail"
           />
           <div class="projects-overlay" data-for="project-4">
-            <h4 data-for="project-4">React Memory Game</h4>
+            <h4 data-for="project-4">Shopping Cart</h4>
             <p data-for="project-4">React</p>
           </div>
         </div>
         <div class="projects">
           <img
-            src="img/project-screenshots/exercise_tracker.png"
+            src="img/project-screenshots/Rick_Morty_Game.png"
             alt="project 5"
             class="project-thumbnail"
           />
           <div class="projects-overlay" data-for="project-5">
-            <h4 data-for="project-5">Microservice API</h4>
-            <p data-for="project-5">Node.js / Express / MongoDB</p>
+            <h4 data-for="project-5">React Memory Game</h4>
+            <p data-for="project-5">React</p>
           </div>
         </div>
         <div class="projects">
           <img
-            src="img/project-screenshots/rsz_screen_shot_2020-01-23_at_33844_pm.png"
+            src="img/project-screenshots/exercise_tracker.png"
             alt="project 6"
             class="project-thumbnail"
           />
           <div class="projects-overlay" data-for="project-6">
-            <h4 data-for="project-6">Employee Directory</h4>
-            <p data-for="project-6">JavaScript / API</p>
+            <h4 data-for="project-6">Microservice API</h4>
+            <p data-for="project-6">Node.js / Express / MongoDB</p>
           </div>
         </div>
       </div>
@@ -204,6 +206,39 @@
 
         <!-- project 1 -->
         <div class="modal-content project-1 hidden">
+          <div class="container">
+            <img src="img/project-screenshots/blogbyte.png" alt="" />
+            <div class="modal-bio">
+              <h4>BlogByte</h4>
+              <p>
+                BlogByte is a MERN stack application that allow users to create
+                blog posts for others to see. Includes authentication to allow
+                users to create accounts and engage in blog posts.
+              </p>
+              <ul class="tools-list">
+                <li class="tools">React + Redux</li>
+                <li class="tools">Node.js</li>
+                <li class="tools">Express</li>
+                <li class="tools">MongoDB</li>
+                <li class="tools">HTML/CSS</li>
+              </ul>
+              <div class="modal-buttons">
+                <a
+                  href="https://warm-tundra-93422.herokuapp.com/"
+                  target="_blank"
+                >
+                  <p class="buttons">Live Demo</p>
+                </a>
+                <a href="https://github.com/xuanngo10/blog" target="_blank">
+                  <p class="buttons">Github</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- project 2 -->
+        <div class="modal-content project-2 hidden">
           <div class="container">
             <img src="img/project-screenshots/personal-library.png" alt="" />
             <div class="modal-bio">
@@ -241,8 +276,8 @@
           </div>
         </div>
 
-        <!-- project 2 -->
-        <div class="modal-content project-2 hidden">
+        <!-- project 3 -->
+        <div class="modal-content project-3 hidden">
           <div class="container">
             <img src="img/project-screenshots/todo_app.png" alt="" />
             <div class="modal-bio">
@@ -276,8 +311,8 @@
           </div>
         </div>
 
-        <!-- project 3 -->
-        <div class="modal-content project-3 hidden">
+        <!-- project 4 -->
+        <div class="modal-content project-4 hidden">
           <div class="container">
             <img src="img/project-screenshots/shopping_cart.png" alt="" />
             <div class="modal-bio">
@@ -306,8 +341,8 @@
           </div>
         </div>
 
-        <!-- project 4 -->
-        <div class="modal-content project-4 hidden">
+        <!-- project 5 -->
+        <div class="modal-content project-5 hidden">
           <div class="container">
             <img src="img/project-screenshots/Rick_Morty_Game.png" alt="" />
             <div class="modal-bio">
@@ -337,8 +372,8 @@
           </div>
         </div>
 
-        <!-- project 5 -->
-        <div class="modal-content project-5 hidden">
+        <!-- project 6 -->
+        <div class="modal-content project-6 hidden">
           <div class="container">
             <img src="img/project-screenshots/exercise_tracker.png" alt="" />
             <div class="modal-bio">
@@ -364,44 +399,6 @@
                 </a>
                 <a
                   href="https://github.com/xuanngo10/exercise-tracker"
-                  target="_blank"
-                >
-                  <p class="buttons">Github</p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- project 6 -->
-        <div class="modal-content project-6 hidden">
-          <div class="container">
-            <img
-              src="img/project-screenshots/rsz_screen_shot_2020-01-23_at_33844_pm.png"
-              alt=""
-            />
-            <div class="modal-bio">
-              <h4>Employee Directory</h4>
-              <p>
-                A directory with randomly generated employees and their data. I
-                created this directory by fetching employee datas with the
-                randomuser.me API. Users can filter by name and see more
-                information about the employee by clicking on their profile.
-              </p>
-              <ul class="tools-list">
-                <li class="tools">JavaScript</li>
-                <li class="tools">Sass</li>
-                <li class="tools">randomuser.me API</li>
-              </ul>
-              <div class="modal-buttons">
-                <a
-                  href="https://xuanngo10.github.io/fewd-techdegree-project-8/"
-                  target="_blank"
-                >
-                  <p class="buttons">Live Demo</p>
-                </a>
-                <a
-                  href="https://github.com/xuanngo10/fewd-techdegree-project-8"
                   target="_blank"
                 >
                   <p class="buttons">Github</p>
